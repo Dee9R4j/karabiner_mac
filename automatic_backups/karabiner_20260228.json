@@ -662,15 +662,6 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
-                            {
-                                "description": "Hyper + Space: Toggle AeroSpace Tiling Manager (On/Off)",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
-                                },
-                                "to": [{ "shell_command": "if pgrep -x AeroSpace > /dev/null; then osascript -e 'quit app \"AeroSpace\"'; else open -a AeroSpace; fi" }],
-                                "type": "basic"
                             }
                         ]
                     },
