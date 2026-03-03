@@ -600,10 +600,10 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "Left Command + Enter -> Open Terminal at Finder Path",
+                                "description": "Hyper + ` -> Open Terminal at Finder Path",
                                 "from": {
-                                    "key_code": "return_or_enter",
-                                    "modifiers": { "mandatory": ["left_command"] }
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": { "mandatory": ["left_command", "left_control", "left_option", "left_shift"] }
                                 },
                                 "to": [{ "shell_command": "open -a Ghostty \"$(osascript -e 'tell application \"Finder\" to get POSIX path of (target of front window as alias)')\"" }],
                                 "type": "basic"
